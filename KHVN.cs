@@ -50,10 +50,11 @@ namespace T1807M1.Assignment8
             Ngayhd = Convert.ToString(Console.ReadLine());
             Console.WriteLine("Nhap Vao So Luong KW");
             Soluong = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Nhap Vao Don Gia ");
-            Dongia = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Dinh Muc");
             DinhMuc = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Nhap Vao Don Gia ");
+            Dongia = Convert.ToDouble(Console.ReadLine());
+
         }
 
         public double TTien()
@@ -63,16 +64,16 @@ namespace T1807M1.Assignment8
                 return this.Thanhtien = this.Soluong * this.Dongia;
             }else if (DinhMuc < 50)
             {
-                return this.Thanhtien = this.Dongia * this.DinhMuc + (this.Soluong + this.DinhMuc) * this.Dongia * 1.0;
+                return this.Thanhtien = this.Dongia * this.DinhMuc + (this.Soluong + this.DinhMuc) * (this.Dongia = 1000);
             }else if (DinhMuc > 50 || DinhMuc < 100)
             {
-                return this.Thanhtien = this.Dongia * this.DinhMuc + (this.Soluong + this.DinhMuc) * this.Dongia * 1.2;
+                return this.Thanhtien = this.Dongia * this.DinhMuc + (this.Soluong + this.DinhMuc) * (this.Dongia = 1200);
             }else if (DinhMuc > 100 || DinhMuc < 200)
             {
-                return this.Thanhtien = this.Dongia * this.DinhMuc + (this.Soluong + this.DinhMuc) * this.Dongia * 1.5;
+                return this.Thanhtien = this.Dongia * this.DinhMuc + (this.Soluong + this.DinhMuc) * (this.Dongia = 1500);
             }else if (DinhMuc > 200 )
             {
-                return this.Thanhtien = this.Dongia * this.DinhMuc + (this.Soluong + this.DinhMuc) * this.Dongia * 2.0;
+                return this.Thanhtien = this.Dongia * this.DinhMuc + (this.Soluong + this.DinhMuc) * (this.Dongia = 2000);
             }else
             {
                 return this.Thanhtien = this.Dongia * this.DinhMuc + (this.Soluong + this.DinhMuc) * this.Dongia * 2.5;
